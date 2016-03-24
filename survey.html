@@ -13,7 +13,7 @@
 
      <h1>Order Form</h1>
 
-<!--Text Fields-->
+<!--Name Entry Text Fields-->
      <div id="name">
        <form>
          <div class="form-group">
@@ -25,35 +25,73 @@
            <input id="name2" class="form-control" type="text">
          </div>
        </div>
-<!--Text Fields-->
+<!--Name Entry Text Fields-->
 
-<!--Radio Buttons-->
-      <h3>Favorite Vegetables</h3>
+<!--DOB Picker-->
+      <div class="form-group">
+        <label for="born">Date of Birth</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+<!--DOB Picker-->
+
+<!--Fav Color Entry Text Fields-->
+      <div class="form-group">
+        <label for="color">Favorite color</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+<!--Fav Color Entry Text Fields-->
+
+<!--Fav Veg Radio Buttons-->
+      <h5>Favorite Vegetable</h5>
       <div id="food">
          <div class="radio">
            <label>
-             <input type="radio" name="vegetables" value="broccoli" checked>
+             <input type="radio" name="vegetable" value="broccoli" checked>
              Broccoli
            </label>
          </div>
          <div class="radio">
            <label>
-             <input type="radio" name="vegetables" value="carrots">
+             <input type="radio" name="vegetable" value="carrots">
              Carrots
            </label>
          </div>
        </div>
-<!--Radio Buttons-->
+<!--Fav Veg Radio Buttons-->
 
+<!--Fav Music Genre Select Boxes-->
+      <h5>Favorite Music Genre</h5>
+      <div id="music">
+        <select class="form-control" id="genre">
+          <option>Kraut Rock</option>
+          <option>Batucada</option>
+          <option>Shoe-gaze</option>
+          <option>Glitch IDM</option>
+        </select>
+      </div>
+<!--Fav Music Genre Select Boxes-->
+
+<!--Submit Button-->
          <button type="submit" class="btn">Submit Responses</button>
        </form>
+<!--Submit Button-->
 
+<!--Results Print-->
      <div id="results">
-        <p>Your Survey Results</p>
+        <h4>Your Survey Results</h4>
+        <h5>Name</h5>
         <p><span class="name1"></span> <span class="name2"></span></p>
-        <p><span class="vegetables"></span></p>
-        <p>Thank you for taking our survey.</p>
+        <h5>Date of Birth</h5>
+        <p><span class="born"></span></p>
+        <h5>Favorite Color</h5>
+        <p><span class="color"></span></p>
+        <h5>Favorite Vegetable</h5>
+        <p><span class="vegetable"></span></p>
+        <h5>Favorite Music Genre</h5>
+        <p><span class="genre"></span></p>
+        <h4>Thank you for taking our survey</h4>
       </div>
+<!--Results Print-->
 
     </div>
   </body>
